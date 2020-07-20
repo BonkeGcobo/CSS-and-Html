@@ -1,0 +1,138 @@
+<style>
+    body{
+        background-color: #F5FAFA;
+    }
+    header{
+        text-align: center;
+    }
+    .heading{
+        color:blue;
+
+    }
+    span{
+        display:inline;
+    }
+    .button{
+        border: none;
+        margin-left: 12px;
+        font-style: italic;
+        color:white;
+        background-color: blue;
+    }
+    .button:hover{
+        background-color: white;
+        color: blue;
+    }
+    main{
+        background-color: white;
+        width: 35%;
+        height: 65%;
+        box-shadow: 0 4px 8px 0 lightblue, 0 6px 20px 0 lightblue;
+        margin: auto;
+        border-radius: 2%;
+        border-style: solid;
+        border-color:lightblue;
+        
+    }
+    .Sign{
+        padding-top: 10px;
+        text-align: center;
+    }
+    hr {
+    display: block;
+    background-color: blue;
+    border: 0;
+    height: 2px;
+    margin:18px 0;
+    position:relative;
+    background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0.65) 50%, rgba(0,0,0,0) 90%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(10%,rgba(0,0,0,0)), color-stop(50%,rgba(0,0,0,0.65)), color-stop(90%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* IE10+ */
+    background: linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+
+hr:before {
+    content: "";
+    display: block;
+    border-top: solid 1px #f9f9f9;
+    background-color:  rgb(21, 21, 163);
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+}
+form{
+   /* border-style: double;*/
+    margin-left: 30px;
+    margin-right: 30px;
+}
+input{
+    width: 100%;
+    box-shadow: 0 4px 8px 0 lightblue, 0 6px 20px 0 lightblue;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+.Sign-btn{
+    background-color: #008CBA;
+    margin-left: 300px;
+    margin-top: 15px;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+     text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+footer{
+    border-radius: 1%;
+    height: 60px;
+    background-color: 6D929B;
+}
+
+
+</style>
+
+<header>
+    <h1>LOGIN AND REGISTATION FORM <strong class="heading">WITH HTML5 AND CSS</strong></h1>
+
+    <span>
+        <p> Click <strong>"Join us"</strong> to see the form switch
+            <button class="button Demo1">Demo 1</button>
+            <button class="button Demo2">Demo 2</button> 
+            <button class="button Demo2">Demo 2</button>
+        </p>
+       
+       
+    </span>
+</header>
+
+<main>
+    <h1 class="Sign">Sign UP</h1>
+    <hr>
+    <form>
+        <label for="username">Your username</label></br>
+        <input type="text" id="Uname" name="Uname" placeholder="username"><br>
+
+        <label for="email">Your email</label></br>
+        <input type="email" id="email" name="email" placeholder="username@abc.com"><br>
+
+        <label for="password">Your password</label></br>
+        <input type="password" id="password1" name="password1" placeholder="eg. XB9ced0"><br>
+
+        <label for="password2">Please confirm your password</label></br>
+        <input type="password" id="confirmPass" name="confirmPass" placeholder="eg. XB9ced0"><br>
+
+        <button class=Sign-btn>SIGN UP</button>
+    </form>
+
+
+    <footer>
+        <p style="color: white;"> Already have an account? <a href="#">Click Here</a>
+    </footer>
+
+</main>
